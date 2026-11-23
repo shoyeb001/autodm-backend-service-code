@@ -1,0 +1,29 @@
+{
+  "name": "autodm-services",
+  "version": "1.0.0",
+  "description": "AutoDM Business Logic and Lambda Handlers with Neon DB",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx build.ts",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.714.0",
+    "@neondatabase/serverless": "^0.10.4",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.146",
+    "@types/node": "^22.10.0",
+    "archiver": "^7.0.1",
+    "drizzle-kit": "^0.30.1",
+    "esbuild": "^0.24.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
